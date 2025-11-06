@@ -20,33 +20,36 @@
   </head>
   <body>
     <div class="container my-5">
-     
+      <!-- Password Display Section -->
       <div class="password-display mb-4">
         <div id="password" class="password-box">f4K1n$1&H!QZ</div>
-        <button
-          class="btn btn-outline-secondary me-2"
-          onclick="copyPassword()"
-          title="Copy"
-          style="border: none"
-        >
-          <i class="fas fa-copy"></i>
-        </button>
-        <button
-          class="btn btn-outline-secondary"
-          onclick="generatePassword()"
-          title="Refresh"
-          style="border: none"
-        >
-          <i class="fas fa-sync-alt"></i>
-        </button>
+
+          <button
+            class="btn btn-outline-secondary "
+            onclick="copyPassword()"
+            title="Copy"
+            style="border: none"
+          >
+
+            <i class="fas fa-copy"></i>
+          </button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="generatePassword()"
+            title="Refresh"
+            style="border: none"
+          >
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        
       </div>
 
+      <!-- Password Customization Section -->
       <div class="card p-4">
         <h4 class="fw-bold mb-0">Customize your password</h4>
         <hr />
 
         <div class="row">
-                    
           <div class="col-md-4 mb-3">
             <label class="form-label">Password Length</label>
             <div class="row">
@@ -75,10 +78,8 @@
             </div>
           </div>
 
-
-
-          <div class="col-md-4 mb-3">
-            <div class="form-check">
+          <div class="col-md-4 mb-3 ">
+            <div class="form-check mb-2">
               <input
                 class="form-check-input"
                 type="radio"
@@ -86,9 +87,11 @@
                 id="say"
                 onclick="handleModeChange()"
               />
-              <label class="form-check-label" for="say">Easy to say  <i class="fas fa-info-circle" title="Disabled"></i></label>
+              <label class="form-check-label" for="say"
+                >Easy to say <i class="fas fa-info-circle" title="Disabled"></i
+              ></label>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-2">
               <input
                 class="form-check-input"
                 type="radio"
@@ -96,9 +99,11 @@
                 id="read"
                 onclick="handleModeChange()"
               />
-              <label class="form-check-label" for="read">Easy to read <i class="fas fa-info-circle" title="Disabled"></i></label>
+              <label class="form-check-label" for="read"
+                >Easy to read <i class="fas fa-info-circle" title="Disabled"></i
+              ></label>
             </div>
-            <div class="form-check">
+            <div class="form-check mb-2">
               <input
                 class="form-check-input"
                 type="radio"
@@ -107,57 +112,24 @@
                 onclick="handleModeChange()"
                 checked
               />
-              <label class="form-check-label" for="all">All characters <i class="fas fa-info-circle" title="Disabled"></i></label>
+              <label class="form-check-label" for="all"
+                >All characters
+                <i class="fas fa-info-circle" title="Disabled"></i
+              ></label>
             </div>
           </div>
 
-
-          <div class="col-md-4 mb-3">
-            <label class="form-label d-block">Include Characters</label>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="uppercase"
-                checked
-              />
-              <label class="form-check-label" for="uppercase">Uppercase</label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="lowercase"
-                checked
-              />
-              <label class="form-check-label" for="lowercase">Lowercase</label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="numbers"
-                checked
-              />
-              <label class="form-check-label" for="numbers">Numbers</label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="symbols"
-                checked
-              />
-              <label class="form-check-label" for="symbols">Symbols</label>
-            </div>
+          <div class="col-md-4 mb-3 ">
+            <div id="includeCharsContainer"></div>
           </div>
         </div>
+      </div>
 
-        <div class="text-center mt-4">
-          <button class="btn copy-btn" onclick="copyPassword()">
-            Copy Password
-          </button>
-        </div>
+      <!-- Copy Password Button Section -->
+      <div class="text-center mt-4">
+        <button class="btn copy-btn fw-bold" onclick="copyPassword()">
+          Copy Password
+        </button>
       </div>
     </div>
 

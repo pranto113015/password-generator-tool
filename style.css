@@ -1,6 +1,6 @@
 body {
   background-color: #c9eff5;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .password-display {
@@ -18,10 +18,10 @@ body {
 
 /* custom button styles */
 .btn.btn-outline-secondary {
-   font-size: 25px;
+  font-size: 20px;
 }
 .password-box {
-  font-family: monospace;
+  font-family: "Roboto", Courier, monospace;
   word-break: break-all;
   flex-grow: 1;
   margin-right: 10px;
@@ -32,13 +32,26 @@ body {
   border-radius: 10px;
 }
 
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+}
+.form-check i {
+  color: #6c757d;
+  cursor: pointer;
+}
 .form-check-input:checked {
-  background-color: #d32f2f;
-  border-color: #d32f2f;
+  background-color: red;
+  border-color: red;
+  margin-bottom: 12px;
+  accent-color: red;
 }
 
 .form-check-input[type="radio"]:checked {
-  background-color: #d32f2f;
+  background-color: red;
+  border-color: red;
 }
 
 .copy-btn {
@@ -68,18 +81,17 @@ body {
   appearance: none;
 }
 
-
-
 #lengthRange.custom-red-range::-webkit-slider-thumb {
   appearance: none;
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   background-color: #d32f2f;
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid white;
-  margin-top: -6px;
+  /* border: 2px solid white; */
+  margin-top: -12px;
 }
+
 
 #lengthRange.custom-red-range::-moz-range-thumb {
   width: 18px;
