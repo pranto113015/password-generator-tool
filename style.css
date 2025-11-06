@@ -21,7 +21,7 @@ body {
   font-size: 20px;
 }
 .password-box {
-  font-family: "Roboto", Courier, monospace;
+  font-family: Roboto, Courier, monospace;
   word-break: break-all;
   flex-grow: 1;
   margin-right: 10px;
